@@ -1,6 +1,6 @@
 # git bash ssh 경로
 ```bash
-$ cd ~./ssh
+$ cd ~/.ssh
 ```
 
 # SSH 생성
