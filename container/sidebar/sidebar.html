@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./container/sidebar/css/sidebar.css" />
+    <link rel="stylesheet" href="../sidebar/style/sidebar.css" />
     <title>Sidebar</title>
   </head>
   <body>
     <template>
-      <i class="material-symbols-outlined">account_circle</i>
+      <i class="bar-icon material-symbols-rounded">account_circle</i>
       <ul>
         <li>
-          <a href="#">
-            <i class="material-symbols-outlined">home</i>
-            Home
-          </a>
+          <a href="/container/home/home.html?view=home"
+            ><i id="home" class="bar-icon material-symbols-rounded">home</i
+            >홈</a
+          >
         </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Category</a></li>
         <li>
-          <a href="#">
-            <i class="material-symbols-outlined">bookmark</i>
-            Tag
-          </a>
+          <a href="/container/board/board.html?view=board"
+            ><i id="board" class="bar-icon material-symbols-rounded"
+              >description</i
+            >게시글</a
+          >
+        </li>
+        <li>
+          <a href="/container/category/category.html?view=category"
+            ><i id="category" class="bar-icon material-symbols-rounded"
+              >bookmark_flag</i
+            >카테고리</a
+          >
+        </li>
+        <li>
+          <a href="/container/tag/tag.html?view=tag"
+            ><i id="tag" class="bar-icon material-symbols-rounded">bookmark</i
+            >태그</a
+          >
         </li>
       </ul>
+      <script src="../sidebar/js/sidebar.js"></script>
     </template>
   </body>
 </html>

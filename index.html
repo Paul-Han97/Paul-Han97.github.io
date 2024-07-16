@@ -1,48 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/font.css" />
-    <title>PaulHan</title>
-    <style></style>
-  </head>
-  <body>
-    <sidebar>
-      <!-- sidebar -->
-    </sidebar>
-
-    <script>
-      window.addEventListener("load", function () {
-        const head = document.querySelector("head");
-        const sidebar = document.querySelector("sidebar");
-
-        const filePath = "./container/sidebar/sidebar.html";
-        let xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            if ("content" in document.createElement("template")) {
-              let link = this.responseXML.querySelector("link");
-              let linkClone = document.importNode(link, true);
-
-              let template = this.responseXML.querySelector("template");
-              let templateClone = document.importNode(template.content, true);
-
-              head.appendChild(linkClone);
-              sidebar.appendChild(templateClone);
-            }
-          }
-        };
-
-        xhr.open("GET", filePath, true);
-        xhr.responseType = "document";
-        xhr.send();
-      });
-    </script>
-  </body>
-</html>
+<meta
+  http-equiv="refresh"
+  content="0; url=https://paul-han97.github.io/container/home/home.html?view=home"
+/>
+<!-- <meta
+  http-equiv="refresh"
+  content="0; url=http://127.0.0.1:5500/container/home/home.html?view=home"
+/> -->
