@@ -1,8 +1,16 @@
-<meta
-  http-equiv="refresh"
-  content="0; url=https://paul-han97.github.io/container/home/home.html?view=home"
-/>
-<!-- <meta
-  http-equiv="refresh"
-  content="0; url=http://127.0.0.1:5500/container/home/home.html?view=home"
-/> -->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <script>
+    const hostname = window.location.hostname;
+    if (hostname === "paul-han97.github.io") {
+      location.href =
+        "https://paul-han97.github.io/container/home/home.html?view=home";
+    } else if (hostname === "127.0.0.1") {
+      location.href =
+        "http://127.0.0.1:5500/container/home/home.html?view=home";
+    }
+  </script>
+</html>
